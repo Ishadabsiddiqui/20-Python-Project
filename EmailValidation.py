@@ -1,3 +1,6 @@
+
+*******************************  EMAIL VALIDATION PROGRAMMING *****************************
+
 email = input("Enter Your Email : ")
 k=0
 j=0
@@ -34,3 +37,23 @@ if len (email)>= 6:
 
 else:
     print("Wrong Email 1")
+    
+    
+    
+    ********************  SECOND PROGRAMMING USING REGEX MODULE  ************************
+    
+    
+    
+# a - z
+# 0-9
+# . _ time 1
+# @ time 1
+# . 2 3
+
+import  re  # using regex module
+email_condition="^[a-z]+[\._]?[a-z 0-9]+[@]\w+[.]\w{2,3}$"
+user_email=input("Enter your Email:  ")
+if re.search(user_email,user_email):
+    print("Correct Email")
+else:
+    print("Wrong Email")
